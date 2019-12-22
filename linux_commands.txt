@@ -1,8 +1,8 @@
 ls commands:
 1.ls document---to see the content inside it
 2.ls ~ will give details of home directory
-3.ls .. ---go to one step back
-4.ls ../..---two step back
+3.cd .. ---go to one step back
+4.cd ../..---two step back
 5.ls -l ---listing in long format means size of file and date of creation and users and owners
 6.ls -a ---to display hidden files (bashrc file,all .files)
 7.ls -lS ---sorting directory as per size.
