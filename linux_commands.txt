@@ -1,0 +1,88 @@
+ls commands:
+1.ls document---to see the content inside it
+2.ls ~ will give details of home directory
+3.ls .. ---go to one step back
+4.ls ../..---two step back
+5.ls -l ---listing in long format means size of file and date of creation and users and owners
+6.ls -a ---to display hidden files (bashrc file,all .files)
+7.ls -lS ---sorting directory as per size.
+8.ls documents/*.html ---this will display the file inside document which has .html extension
+9.ls documents/*.* ---all the file with any extension
+10.ls -d */ ---to list only directories.
+--------------------------------------------------------------------------------------
+cat command:
+1.cat file name ex:cat file1.txt
+2.cat -n file.txt ---it will add line number
+3.cat >file.txt
+4.cat >>file.txt
+--------------------------------------------------------------------------------------
+1.mkdir -p names/{john,tom} ---it will create 2 directory inside names
+--------------------------------------------------------------------------------------proclan technologies pvt ltd
+rm and rmdir:
+rm to use remove the directory
+1.rmdir abc
+2.mkdir -p a/b/c/d/e
+3.ls -R ---to see the directory structure
+4.rmdir a/b/c/d/e ---it will remove only top level directory called e
+5.rmdir -p a/b/c/d/e ---it wll remove complete directory structure
+6.rmdir -pv a/b/c/d/e --- this will show the background process how it is removing(extending output)
+7.rm -rv a/b/c ---this will delete directory if it is not empty
+
+---------------------------------------------------------------------------------------
+cp command:cp option source destination
+
+
+
+
+---------------------------------------------------------------------------------------
+SED COMMAND
+
+1.sed `5q` abc.txt ---it displays first 5 lines
+2.sed `2p` abc.txt ---displays 2nd line but it will display twice
+3.sed -n `2p` abc.txt ---display only 2nd line
+4.sed `3d` abc.txt ---display all the lines in a file except 3rd line
+5.sed -n '/Ram/p' ---display all the line which contains 'Ram'
+6.sed -n '/^Ram/p' ---display the linne which starts with 'Ram'
+7.sed 's/Ram/sonu/' abc.txt ---this will replace the ram with sonu
+
+--------------------------------------------------------------------------------------
+Touch command:It used to create empty file in present directory
+
+1.touch file name:touch abc.txt
+2.touch abc.txt ---it will update the time stamp of the abc.txt file
+3.touch -m abc.txt ---to change file modification timme
+4.touch -c ---to avoid creating new file
+--------------------------------------------------------------------------------------
+
+Top command:
+It will give current run time precess with RAM,CPU and other resources.it will refresh in every 3 sec.
+we can delay the refresh time by just pressing S from keyboard and give time to refresh as user wanted.
+
+1.press i to filter idle process.
+
+--------------------------------------------------------------------------------------
+Kill command:it uses to kill the process.
+
+1.kill -PID
+2.pidof (name of the process) ---to know the pid of the process
+3.kill -KILL PID(FORCE KILL)
+4.kill -9 PID(FORCE KILL)
+5.ps -ux ---will give long listing of running processes.
+6.ps -aux ---process running by all the users.
+7.ps -U user name ---to know the process running by the perticular user.
+8.ps -C name of the process ---all the process running by this program.
+
+--------------------------------------------------------------------------------------
+
+File permissions:chmod 
+
+1.chmod 777 abc.txt ---to give full access to the perticular file
+2.chmod o+x abc.txt ---giving executable permission to others
+3.chmod o+w abc.txt ---giving write permission to others
+4.chmod g+x abc.txt ---giving execute permission to group
+5.chmod g-wx abc.txt ---removing write and executable permission for group.
+6.chmod ug=rwx abc.txt ---giving permission to user and groups.
+7.chmod u+rw,g=rw,o+r abc ---
+
+
+
